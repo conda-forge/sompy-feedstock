@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }},<3
     - scikit-learn >=0.16
@@ -34,7 +35,7 @@ test:
 
 about:
   home: https://github.com/ttlg/sompy
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE' 
   summary: "Numpy based SOM Library"
